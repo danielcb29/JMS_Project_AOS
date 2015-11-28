@@ -1,9 +1,0 @@
-2015-11-21 11:50:04,651 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:49425, reason:Failed login: User id not provided 
-2015-11-21 11:50:05,314 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:49427, reason:Failed login: User id not provided 
-2015-11-21 11:50:11,949 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:49427, reason:Failed login: Invalid user id or password for user: root 
-2015-11-21 11:50:15,131 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:49427, reason:Failed login: Invalid user id or password for user: admin 
-2015-11-21 11:50:24,971 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:49427, reason:Failed login: Invalid user id or password for user: admin 
-2015-11-21 11:50:44,402 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:49428, reason:Failed login: User id not provided 
-2015-11-21 11:50:44,463 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:49428, reason:Failed login: User id not provided 
-2015-11-24 16:10:13,522 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:51771, reason:Failed login: User id not provided 
-2015-11-24 16:10:13,828 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:51771, reason:Failed login: User id not provided 
