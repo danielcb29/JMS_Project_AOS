@@ -19,12 +19,12 @@
 
   <modelVersion>4.0.0</modelVersion>
   
-  <groupId>example</groupId>
-  <artifactId>stomp-example</artifactId>
+  <groupId>helloworld</groupId>
+  <artifactId>apollo-stomp-helloworld</artifactId>
   <version>0.1-SNAPSHOT</version>
   
-  <name>example</name>
-  <description>Apollo STOMP Java Examples</description>
+  <name>helloworld</name>
+  <description>Apollo STOMP Java Hello World</description>
 
   <repositories>
     <repository>
