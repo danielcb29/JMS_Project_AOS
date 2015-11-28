@@ -1,0 +1,41 @@
+Manifest-Version: 1.0
+Export-Package: org.fusesource.stomp.jms.jndi;uses:="javax.naming,java
+ x.jms,org.fusesource.stomp.jms,javax.naming.spi",org.fusesource.stomp
+ .jms.util;uses:="javax.jms,org.fusesource.hawtbuf,org.fusesource.stom
+ p.client,org.fusesource.stomp.jms,org.fusesource.stomp.jms.message,or
+ g.fusesource.stomp.codec",org.fusesource.stomp.jms;uses:="org.apache.
+ activemq.apollo.selector,javax.jms,org.fusesource.hawtbuf,org.fusesou
+ rce.stomp.client,org.apache.activemq.apollo.filter,org.fusesource.sto
+ mp.jms.jndi,org.fusesource.hawtdispatch,org.fusesource.stomp.jms.util
+ ,org.fusesource.stomp.jms.message,org.fusesource.hawtdispatch.transpo
+ rt,org.fusesource.stomp.codec,javax.net.ssl",org.fusesource.stomp.jms
+ .message;uses:="javax.jms,org.fusesource.stomp.jms.util,org.fusesourc
+ e.stomp.jms,org.fusesource.stomp.codec,org.fusesource.hawtbuf,org.fus
+ esource.stomp.client",org.fusesource.stomp.codec;uses:="org.fusesourc
+ e.hawtdispatch.util,org.fusesource.hawtdispatch.transport,org.fusesou
+ rce.hawtbuf,org.fusesource.stomp.client",org.fusesource.stomp.client;
+ uses:="org.fusesource.hawtdispatch,org.fusesource.hawtdispatch.transp
+ ort,org.fusesource.stomp.codec,javax.net.ssl,org.fusesource.hawtbuf"
+Implementation-Title: stompjms-client
+Implementation-Version: 1.18
+Tool: Bnd-0.0.160
+Bundle-Name: stompjms-client
+Created-By: 1.7.0_07 (Oracle Corporation)
+Bundle-Vendor: FuseSource, Corp.
+Bundle-Version: 1.18
+Bnd-LastModified: 1381516408181
+Bundle-ManifestVersion: 2
+Bundle-License: http://www.opensource.org/licenses/cddl1
+Bundle-Description: STOMP-JMS is a JMS implementation using STOMP as t
+ he wire protocol
+Import-Package: javax.jms,javax.naming,javax.naming.spi,javax.net.ssl,
+ org.apache.activemq.apollo.filter;resolution:=optional,org.apache.act
+ ivemq.apollo.selector;resolution:=optional,org.fusesource.hawtbuf;ver
+ sion=1.9,org.fusesource.hawtdispatch,org.fusesource.hawtdispatch.tran
+ sport;version=1.18,org.fusesource.hawtdispatch.util;version=1.18,org.
+ fusesource.stomp.client,org.fusesource.stomp.codec,org.fusesource.sto
+ mp.jms,org.fusesource.stomp.jms.jndi,org.fusesource.stomp.jms.message
+ ,org.fusesource.stomp.jms.util
+Bundle-SymbolicName: org.fusesource.stompjms.stompjms-client
+Bundle-DocURL: http://fusesource.com/
+

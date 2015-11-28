@@ -1,0 +1,125 @@
+2015-11-21 11:46:52,067 | INFO  | OS     : Mac OS X 10.11.1 | 
+2015-11-21 11:46:52,093 | INFO  | JVM    : Java HotSpot(TM) 64-Bit Server VM 1.6.0_65 (Apple Inc.) | 
+2015-11-21 11:46:52,094 | INFO  | Apollo : 1.7.1 (at: /Users/daniel/Downloads/apache-apollo-1.7.1) | 
+2015-11-21 11:46:52,095 | INFO  | OS is restricting the open file limit to: 6250 | 
+2015-11-21 11:46:52,097 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2015-11-21 11:46:52,755 | INFO  | Starting store: leveldb store at /Users/daniel/mybroker/data | 
+2015-11-21 11:46:53,844 | INFO  | virtual host startup is waiting on store startup | 
+2015-11-21 11:46:54,120 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2015-11-21 11:46:54,121 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2015-11-21 11:46:54,368 | INFO  | Opening the log file took: 301,67 ms | 
+2015-11-21 11:46:54,633 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-11-21 11:46:55,025 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2015-11-21 11:46:55,086 | INFO  | virtual host startup is no longer waiting.  It waited a total of 2 seconds. | 
+2015-11-21 11:46:57,530 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2015-11-21 11:46:57,531 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-11-21 11:50:37,228 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-11-21 11:50:37,228 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-11-21 11:50:38,090 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-11-21 11:50:38,619 | WARN  | javax.net.ssl.SSLException: Inbound closed before receiving peer's close_notify: possible truncation attack? | 
+2015-11-21 12:52:16,283 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2015-11-21 12:52:16,304 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2015-11-21 12:52:16,498 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2015-11-21 12:52:16,498 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-11-24 16:09:37,421 | INFO  | OS     : Mac OS X 10.11.1 | 
+2015-11-24 16:09:37,452 | INFO  | JVM    : Java HotSpot(TM) 64-Bit Server VM 1.6.0_65 (Apple Inc.) | 
+2015-11-24 16:09:37,453 | INFO  | Apollo : 1.7.1 (at: /Users/daniel/Downloads/apache-apollo-1.7.1) | 
+2015-11-24 16:09:37,454 | INFO  | OS is restricting the open file limit to: 6250 | 
+2015-11-24 16:09:37,457 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2015-11-24 16:09:38,058 | INFO  | Starting store: leveldb store at /Users/daniel/mybroker/data | 
+2015-11-24 16:09:39,109 | INFO  | virtual host startup is waiting on store startup | 
+2015-11-24 16:09:39,275 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2015-11-24 16:09:39,276 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2015-11-24 16:09:39,776 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-11-24 16:09:39,922 | INFO  | Opening the log file took: 608,64 ms | 
+2015-11-24 16:09:40,239 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2015-11-24 16:09:43,032 | INFO  | broker startup is waiting on start jetty webserver, start virtual-host: mybroker | 
+2015-11-24 16:09:43,766 | INFO  | virtual host startup is no longer waiting.  It waited a total of 5 seconds. | 
+2015-11-24 16:09:45,345 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2015-11-24 16:09:45,346 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-11-24 16:09:45,346 | INFO  | broker startup is no longer waiting.  It waited a total of 7 seconds. | 
+2015-11-24 16:18:16,176 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2015-11-24 16:18:16,189 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-11-24 16:18:16,190 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2015-11-24 16:18:16,191 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2015-11-24 16:18:17,130 | INFO  | stopping broker is waiting on stop broker: default | 
+2015-11-24 16:18:17,179 | INFO  | virtual host shutdown is waiting on store session counter | 
+2015-11-24 16:18:17,471 | INFO  | virtual host shutdown is no longer waiting.  It waited a total of 1 seconds. | 
+2015-11-24 16:18:17,472 | INFO  | stopping broker is no longer waiting.  It waited a total of 1 seconds. | 
+2015-11-28 16:36:25,141 | INFO  | OS     : Mac OS X 10.11.1 | 
+2015-11-28 16:36:25,329 | INFO  | JVM    : Java HotSpot(TM) 64-Bit Server VM 1.6.0_65 (Apple Inc.) | 
+2015-11-28 16:36:25,330 | INFO  | Apollo : 1.7.1 (at: /Users/daniel/Downloads/apache-apollo-1.7.1) | 
+2015-11-28 16:36:25,366 | INFO  | OS is restricting the open file limit to: 6250 | 
+2015-11-28 16:36:25,373 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2015-11-28 16:36:30,957 | INFO  | Starting store: leveldb store at /Users/daniel/mybroker/data | 
+2015-11-28 16:36:32,554 | INFO  | virtual host startup is waiting on store startup | 
+2015-11-28 16:36:34,770 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2015-11-28 16:36:34,827 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2015-11-28 16:36:35,622 | INFO  | broker startup is waiting on start connector: ws, start jetty webserver, start virtual-host: mybroker, start connector: wss | 
+2015-11-28 16:36:35,759 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-11-28 16:36:36,318 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2015-11-28 16:36:36,620 | INFO  | Opening the log file took: 1768,45 ms | 
+2015-11-28 16:36:40,643 | INFO  | broker startup is now waiting on start jetty webserver, start virtual-host: mybroker | 
+2015-11-28 16:36:41,014 | INFO  | virtual host startup is no longer waiting.  It waited a total of 9 seconds. | 
+2015-11-28 16:36:42,023 | INFO  | virtual host startup is waiting on load session counter | 
+2015-11-28 16:36:42,086 | INFO  | virtual host startup is no longer waiting.  It waited a total of 1 seconds. | 
+2015-11-28 16:36:45,675 | INFO  | broker startup is now waiting on start jetty webserver | 
+2015-11-28 16:36:46,665 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2015-11-28 16:36:46,964 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-11-28 16:36:46,964 | INFO  | broker startup is no longer waiting.  It waited a total of 16 seconds. | 
+2015-11-28 16:38:07,877 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2015-11-28 16:38:07,891 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2015-11-28 16:38:07,891 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2015-11-28 16:38:07,890 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-11-28 16:38:08,840 | INFO  | stopping broker is waiting on stop broker: default | 
+2015-11-28 16:38:08,879 | INFO  | virtual host shutdown is waiting on stop leveldb store at /Users/daniel/mybroker/data | 
+2015-11-28 16:38:09,289 | INFO  | virtual host shutdown is no longer waiting.  It waited a total of 1 seconds. | 
+2015-11-28 16:38:09,290 | INFO  | stopping broker is no longer waiting.  It waited a total of 1 seconds. | 
+2015-11-28 16:39:48,447 | INFO  | OS     : Mac OS X 10.11.1 | 
+2015-11-28 16:39:48,493 | INFO  | JVM    : Java HotSpot(TM) 64-Bit Server VM 1.6.0_65 (Apple Inc.) | 
+2015-11-28 16:39:48,494 | INFO  | Apollo : 1.7.1 (at: /Users/daniel/Downloads/apache-apollo-1.7.1) | 
+2015-11-28 16:39:48,495 | INFO  | OS is restricting the open file limit to: 6250 | 
+2015-11-28 16:39:48,497 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2015-11-28 16:39:49,094 | INFO  | Starting store: leveldb store at /Users/daniel/Documents/UnEx/SOA/Proyecto/JMS_Project_AOS/broker_apollo/data | 
+2015-11-28 16:39:50,318 | INFO  | virtual host startup is waiting on store startup | 
+2015-11-28 16:39:51,562 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2015-11-28 16:39:51,564 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2015-11-28 16:39:52,014 | INFO  | Opening the log file took: 808,38 ms | 
+2015-11-28 16:39:52,032 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-11-28 16:39:52,528 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2015-11-28 16:39:54,067 | INFO  | broker startup is waiting on start virtual-host: mybroker, start jetty webserver | 
+2015-11-28 16:39:54,417 | INFO  | virtual host startup is no longer waiting.  It waited a total of 5 seconds. | 
+2015-11-28 16:39:55,952 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2015-11-28 16:39:55,953 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-11-28 16:39:55,954 | INFO  | broker startup is no longer waiting.  It waited a total of 6 seconds. | 
+2015-11-28 16:39:57,795 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2015-11-28 16:39:57,795 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2015-11-28 16:39:57,807 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-11-28 16:39:57,808 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2015-11-28 16:39:58,778 | INFO  | stopping broker is waiting on stop broker: default | 
+2015-11-28 16:39:58,799 | INFO  | virtual host shutdown is waiting on stop leveldb store at /Users/daniel/Documents/UnEx/SOA/Proyecto/JMS_Project_AOS/broker_apollo/data | 
+2015-11-28 16:39:58,962 | INFO  | virtual host shutdown is no longer waiting.  It waited a total of 1 seconds. | 
+2015-11-28 16:39:58,962 | INFO  | stopping broker is no longer waiting.  It waited a total of 1 seconds. | 
+2015-11-28 16:41:22,975 | INFO  | OS     : Mac OS X 10.11.1 | 
+2015-11-28 16:41:23,007 | INFO  | JVM    : Java HotSpot(TM) 64-Bit Server VM 1.6.0_65 (Apple Inc.) | 
+2015-11-28 16:41:23,008 | INFO  | Apollo : 1.7.1 (at: /Users/daniel/Downloads/apache-apollo-1.7.1) | 
+2015-11-28 16:41:23,009 | INFO  | OS is restricting the open file limit to: 6250 | 
+2015-11-28 16:41:23,012 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2015-11-28 16:41:23,645 | INFO  | Starting store: leveldb store at /Users/daniel/Documents/UnEx/SOA/Proyecto/JMS_Project_AOS/broker_apollo/data | 
+2015-11-28 16:41:24,737 | INFO  | virtual host startup is waiting on store startup | 
+2015-11-28 16:41:24,832 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2015-11-28 16:41:24,833 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2015-11-28 16:41:25,238 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2015-11-28 16:41:25,484 | INFO  | Opening the log file took: 847,48 ms | 
+2015-11-28 16:41:25,688 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2015-11-28 16:41:27,231 | INFO  | virtual host startup is no longer waiting.  It waited a total of 3 seconds. | 
+2015-11-28 16:41:28,466 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2015-11-28 16:41:28,467 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2015-11-28 16:45:28,497 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2015-11-28 16:45:28,511 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2015-11-28 16:45:28,510 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2015-11-28 16:45:28,513 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2015-11-28 16:45:29,449 | INFO  | stopping broker is waiting on stop broker: default | 
+2015-11-28 16:45:29,500 | INFO  | virtual host shutdown is waiting on stop leveldb store at /Users/daniel/Documents/UnEx/SOA/Proyecto/JMS_Project_AOS/broker_apollo/data | 
+2015-11-28 16:45:30,283 | INFO  | virtual host shutdown is no longer waiting.  It waited a total of 1 seconds. | 
+2015-11-28 16:45:30,284 | INFO  | stopping broker is no longer waiting.  It waited a total of 1 seconds. | 
