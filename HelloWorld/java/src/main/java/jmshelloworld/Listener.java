@@ -38,8 +38,6 @@ class Listener {
         Destination dest = new StompJmsDestination(destination);
 
         MessageConsumer consumer = session.createConsumer(dest);
-        long start = System.currentTimeMillis();
-        long count = 1;
         System.out.println("Esperando por mensajes...");
         while(true) {
             Message msg = consumer.receive();
@@ -48,7 +46,7 @@ class Listener {
                 if( "SHUTDOWN".equals(body)) {
                     break;
                 } else {
-                	System.out.println("Mensaje recibido: "+((TextMessage) msg).getText());
+                	System.out.println("Mensaje recibido: "+body);
                 }
 
             } else {
