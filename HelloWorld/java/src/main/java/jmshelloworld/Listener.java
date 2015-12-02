@@ -40,33 +40,19 @@ class Listener {
         MessageConsumer consumer = session.createConsumer(dest);
         long start = System.currentTimeMillis();
         long count = 1;
-        System.out.println("Waiting for messages...");
+        System.out.println("Esperando por mensajes...");
         while(true) {
             Message msg = consumer.receive();
             if( msg instanceof  TextMessage ) {
                 String body = ((TextMessage) msg).getText();
                 if( "SHUTDOWN".equals(body)) {
-                    long diff = System.currentTimeMillis() - start;
-                    System.out.println(String.format("Received %d in %.2f seconds", count, (1.0*diff/1000.0)));
                     break;
                 } else {
-                    if( count != msg.getIntProperty("id") ) {
-                        System.out.println("mismatch: "+count+"!="+msg.getIntProperty("id"));
-                    }
-                    count = msg.getIntProperty("id");
-
-                    if( count == 0 ) {
-                        start = System.currentTimeMillis();
-                    }
-                    if( count % 1000 == 0 ) {
-                        System.out.println("HelloWorld");
-                        System.out.println(String.format("Received %d messages.", count));
-                    }
-                    count ++;
+                	System.out.println("Mensaje recibido: "+((TextMessage) msg).getText());
                 }
 
             } else {
-                System.out.println("Unexpected message type: "+msg.getClass());
+                System.out.println("Mensaje inesperado: "+msg.getClass());
             }
         }
         connection.close();
