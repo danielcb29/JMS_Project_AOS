@@ -1,6 +1,6 @@
-stomp-example-0.1-SNAPSHOT.jar=/Users/daniel/Documents/UnEx/SOA/Proyecto/JMS_Project_AOS/Chat/java/target/stomp-example-0.1-SNAPSHOT.jar
-geronimo-jms_1.1_spec-1.1.jar=/Users/daniel/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1/geronimo-jms_1.1_spec-1.1.jar
-stompjms-client-1.18.jar=/Users/daniel/.m2/repository/org/fusesource/stompjms/stompjms-client/1.18/stompjms-client-1.18.jar
-hawtdispatch-transport-1.18.jar=/Users/daniel/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch-transport/1.18/hawtdispatch-transport-1.18.jar
-hawtdispatch-1.18.jar=/Users/daniel/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch/1.18/hawtdispatch-1.18.jar
-hawtbuf-1.9.jar=/Users/daniel/.m2/repository/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.jar
+stomp-example-0.1-SNAPSHOT.jar=/Users/Cextremerar/Desktop/Universidad/4º Curso/1º Semestre/AOS/Proyecto/JMS_Project_AOS/Chat/java/target/stomp-example-0.1-SNAPSHOT.jar
+geronimo-jms_1.1_spec-1.1.jar=/Users/Cextremerar/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1/geronimo-jms_1.1_spec-1.1.jar
+stompjms-client-1.18.jar=/Users/Cextremerar/.m2/repository/org/fusesource/stompjms/stompjms-client/1.18/stompjms-client-1.18.jar
+hawtdispatch-transport-1.18.jar=/Users/Cextremerar/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch-transport/1.18/hawtdispatch-transport-1.18.jar
+hawtdispatch-1.18.jar=/Users/Cextremerar/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch/1.18/hawtdispatch-1.18.jar
+hawtbuf-1.9.jar=/Users/Cextremerar/.m2/repository/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.jar

@@ -18,6 +18,10 @@ package example;
 
 import org.fusesource.stomp.jms.*;
 import javax.jms.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+
 
 class Publisher {
 
@@ -33,9 +37,13 @@ class Publisher {
         int size = 256;
 
         String DATA = "abcdefghijklmnopqrstuvwxyz";
-        String body = "";
-        for( int i=0; i < size; i ++) {
-            body += DATA.charAt(i%DATA.length());
+        String body="";
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in)); 
+        try{
+            body=in.readLine();
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
 
         StompJmsConnectionFactory factory = new StompJmsConnectionFactory();
