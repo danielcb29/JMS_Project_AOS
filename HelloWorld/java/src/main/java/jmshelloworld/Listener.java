@@ -14,12 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package example;
+package jmshelloworld;
 
 import org.fusesource.stomp.jms.*;
 import javax.jms.*;
 
-class Publisher {
+class Listener {
 
     public static void main(String []args) throws JMSException {
 
@@ -29,15 +29,6 @@ class Publisher {
         int port = Integer.parseInt(env("APOLLO_PORT", "61613"));
         String destination = arg(args, 0, "/topic/event");
 
-        int messages = 10000;
-        int size = 256;
-
-        String DATA = "abcdefghijklmnopqrstuvwxyz";
-        String body = "";
-        for( int i=0; i < size; i ++) {
-            body += DATA.charAt(i%DATA.length());
-        }
-
         StompJmsConnectionFactory factory = new StompJmsConnectionFactory();
         factory.setBrokerURI("tcp://" + host + ":" + port);
 
@@ -45,21 +36,26 @@ class Publisher {
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         Destination dest = new StompJmsDestination(destination);
-        MessageProducer producer = session.createProducer(dest);
-        producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
 
-        for( int i=1; i <= messages; i ++) {
-            TextMessage msg = session.createTextMessage(body);
-            msg.setIntProperty("id", i);
-            producer.send(msg);
-            if( (i % 1000) == 0) {
-                System.out.println(String.format("Sent %d messages", i));
+        MessageConsumer consumer = session.createConsumer(dest);
+        long start = System.currentTimeMillis();
+        long count = 1;
+        System.out.println("Esperando por mensajes...");
+        while(true) {
+            Message msg = consumer.receive();
+            if( msg instanceof  TextMessage ) {
+                String body = ((TextMessage) msg).getText();
+                if( "SHUTDOWN".equals(body)) {
+                    break;
+                } else {
+                	System.out.println("Mensaje recibido: "+((TextMessage) msg).getText());
+                }
+
+            } else {
+                System.out.println("Mensaje inesperado: "+msg.getClass());
             }
         }
-
-        producer.send(session.createTextMessage("SHUTDOWN"));
         connection.close();
-
     }
 
     private static String env(String key, String defaultValue) {
@@ -75,5 +71,4 @@ class Publisher {
         else
             return defaultValue;
     }
-
 }
