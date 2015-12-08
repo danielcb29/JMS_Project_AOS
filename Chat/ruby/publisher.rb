@@ -30,15 +30,11 @@ destination = $*[0] || "/topic/event"
 
 conn = Stomp::Connection.open user, password, host, port, false 
 
-DATA = "abcdefghijklmnopqrstuvwxyz";
-body = "";
-for i in 0..(size-1)
-  body += DATA[ i % DATA.length,1]
-end
-
+a = gets.chomp
+puts "Se ha enviado: " + a
 for i in 1..messages
-  conn.publish destination, body, {'persistent'=>'false'}
-  $stdout.print "Sent #{i} messages\n" if i%1000==0
+  conn.publish destination, a, {'persistent'=>'false'}
+  puts "Sent #{i} messages\n" if i%1000==0
 end
 
 conn.publish destination, "SHUTDOWN", {'persistent'=>'false'}

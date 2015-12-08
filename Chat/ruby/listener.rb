@@ -43,6 +43,7 @@ while true
 		  start = Time.now if count==0 
 			count += 1;
 			if count % 1000 == 0
+				puts msg.body
  				$stdout.print "Received #{count} messages.\n"
 			end
 		end
