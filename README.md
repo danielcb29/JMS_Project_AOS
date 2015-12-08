@@ -14,5 +14,5 @@ Los ejemplos estan desarrollados con Apollo bajo el protocolo STOMP y son un Hel
 - Maven 
 - Python 
 - STOMP en Ruby:
- 
-	sudo gem install stomp
+
+	gem install stomp

@@ -29,13 +29,14 @@ port = ENV["APOLLO_PORT"] || 61613
 destination = $*[0] || "/topic/event"
 
 conn = Stomp::Connection.open user, password, host, port, false 
-
-a = gets.chomp
-puts "Se ha enviado: " + a
-for i in 1..messages
-  conn.publish destination, a, {'persistent'=>'false'}
-  puts "Sent #{i} messages\n" if i%1000==0
+puts "El chat a iniciado!, digita el mensaje y pulsa enter"
+while true
+	msn = gets.chomp
+	puts "Tu has enviado: " + msn
+	conn.publish destination, msn, {'persistent'=>'false'}
+	if msn == "SHUTDOWN"
+		conn.disconnect
+		exit 0
+	end
 end
 
-conn.publish destination, "SHUTDOWN", {'persistent'=>'false'}
-conn.disconnect

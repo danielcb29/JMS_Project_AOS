@@ -30,25 +30,22 @@ count = 0
 
 conn.subscribe destination, { :ack =>"auto" }
 start = Time.now
-$stdout.print "Waiting for messages...\n"
+puts "Waiting for messages...\n"
 while true 
 	msg = conn.receive
 	if msg.command == "MESSAGE" 
 		if msg.body == "SHUTDOWN"
 			diff = Time.now - start
-			$stdout.print "Received #{count} in #{diff} seconds\n";
+			puts "Received #{count} in #{diff} seconds\n";
 			exit 0
 	
 		else
-		  start = Time.now if count==0 
+		  	start = Time.now if count==0 
 			count += 1;
-			if count % 1000 == 0
-				puts msg.body
- 				$stdout.print "Received #{count} messages.\n"
-			end
+			puts "Has recibido: " + msg.body
 		end
 	else
- 		$stdout.print "#{msg.command}: #{msg.body}\n"
+ 		puts "#{msg.command}: #{msg.body}\n"
 	end
 end
 
