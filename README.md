@@ -9,11 +9,9 @@ Los ejemplos estan desarrollados con Apollo bajo el protocolo STOMP y son un Hel
 
 ## Prerequisitos 
 
--Java 7 o superior
--Ruby 
--Maven 
--Python 
--STOMP en Ruby: 
+- Java 7 o superior
+- Ruby 
+- Maven 
+- Python 
+- STOMP en Ruby: 
 	sudo gem install stomp
-
-
