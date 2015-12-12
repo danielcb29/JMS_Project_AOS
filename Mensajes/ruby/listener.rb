@@ -30,13 +30,14 @@ count = 0
 
 conn.subscribe destination, { :ack =>"auto" }
 start = Time.now
-puts "Waiting for messages...\n"
+puts "Estas listo para recibir mensajes!"
 while true 
 	msg = conn.receive
 	if msg.command == "MESSAGE" 
 		if msg.body == "SHUTDOWN"
 			diff = Time.now - start
-			puts "Received #{count} in #{diff} seconds\n";
+			puts "El envio de mensajes ha finalizado!"
+			puts "Recibidos #{count} mensajes en #{diff} segundos"
 			exit 0
 	
 		else
@@ -45,7 +46,7 @@ while true
 			puts "Has recibido: " + msg.body
 		end
 	else
- 		puts "#{msg.command}: #{msg.body}\n"
+ 		puts "#{msg.command}: #{msg.body}"
 	end
 end
 

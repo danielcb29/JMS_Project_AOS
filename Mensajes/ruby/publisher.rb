@@ -29,13 +29,14 @@ port = ENV["APOLLO_PORT"] || 61613
 destination = $*[0] || "/topic/event"
 
 conn = Stomp::Connection.open user, password, host, port, false 
-puts "El chat a iniciado!, digita el mensaje y pulsa enter"
+puts "El envio de mensajes a iniciado!, digita el mensaje y pulsa enter"
 while true
 	msn = gets.chomp
 	puts "Tu has enviado: " + msn
 	conn.publish destination, msn, {'persistent'=>'false'}
 	if msn == "SHUTDOWN"
 		conn.disconnect
+		puts "El envio de mensajes ha finalizado!"
 		exit 0
 	end
 end
