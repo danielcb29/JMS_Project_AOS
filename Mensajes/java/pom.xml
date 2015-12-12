@@ -19,12 +19,12 @@
 
   <modelVersion>4.0.0</modelVersion>
   
-  <groupId>chatjms-javaclient</groupId>
-  <artifactId>jms-stomp-chatjavaclient</artifactId>
+  <groupId>jms-javaclient</groupId>
+  <artifactId>jms-stomp-javaclient</artifactId>
   <version>0.1-SNAPSHOT</version>
   
-  <name>chatjms-javaclient</name>
-  <description>Apollo STOMP Java Chat Client</description>
+  <name>jms-javaclient</name>
+  <description>Apollo STOMP Java Client</description>
 
   <repositories>
     <repository>

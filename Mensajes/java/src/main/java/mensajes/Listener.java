@@ -14,16 +14,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package chat;
+package mensajes;
 
 import org.fusesource.stomp.jms.*;
 import javax.jms.*;
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.io.IOException;
 
-
-class Publisher {
+class Listener {
 
     public static void main(String []args) throws JMSException {
 
@@ -33,19 +29,6 @@ class Publisher {
         int port = Integer.parseInt(env("APOLLO_PORT", "61613"));
         String destination = arg(args, 0, "/topic/event");
 
-        int messages = 10000;
-        int size = 256;
-
-        String DATA = "abcdefghijklmnopqrstuvwxyz";
-        String body="";
-        BufferedReader in = new BufferedReader(new InputStreamReader(System.in)); 
-        try{
-            body=in.readLine();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
         StompJmsConnectionFactory factory = new StompJmsConnectionFactory();
         factory.setBrokerURI("tcp://" + host + ":" + port);
 
@@ -53,21 +36,32 @@ class Publisher {
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         Destination dest = new StompJmsDestination(destination);
-        MessageProducer producer = session.createProducer(dest);
-        producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
 
-        for( int i=1; i <= messages; i ++) {
-            TextMessage msg = session.createTextMessage(body);
-            msg.setIntProperty("id", i);
-            producer.send(msg);
-            if( (i % 1000) == 0) {
-                System.out.println(String.format("Sent %d messages", i));
+        MessageConsumer consumer = session.createConsumer(dest);
+        long start = System.currentTimeMillis();
+        long count = 0;
+        System.out.println("Estas listo para recibir mensajes!");
+        while(true) {
+            Message msg = consumer.receive();
+            if( msg instanceof  TextMessage ) {
+                String body = ((TextMessage) msg).getText();
+                if( "SHUTDOWN".equals(body)) {
+                    long diff = System.currentTimeMillis() - start;
+                    System.out.println(String.format("Recibidos %d mensajes en %.2f segundos", count, (1.0*diff/1000.0)));
+                    break;
+                } else {
+                    count++;
+                    if( count == 0 ) {
+                        start = System.currentTimeMillis();
+                    }
+                    System.out.println("Has recibido: "+body);
+                }
+
+            } else {
+                System.out.println("Unexpected message type: "+msg.getClass());
             }
         }
-
-        producer.send(session.createTextMessage("SHUTDOWN"));
         connection.close();
-
     }
 
     private static String env(String key, String defaultValue) {
@@ -83,5 +77,4 @@ class Publisher {
         else
             return defaultValue;
     }
-
 }

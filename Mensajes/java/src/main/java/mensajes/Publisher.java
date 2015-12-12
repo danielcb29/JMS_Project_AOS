@@ -14,12 +14,16 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package chat;
+package mensajes;
 
 import org.fusesource.stomp.jms.*;
 import javax.jms.*;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
 
-class Listener {
+
+class Publisher {
 
     public static void main(String []args) throws JMSException {
 
@@ -29,6 +33,9 @@ class Listener {
         int port = Integer.parseInt(env("APOLLO_PORT", "61613"));
         String destination = arg(args, 0, "/topic/event");
 
+        
+        
+
         StompJmsConnectionFactory factory = new StompJmsConnectionFactory();
         factory.setBrokerURI("tcp://" + host + ":" + port);
 
@@ -36,39 +43,31 @@ class Listener {
         connection.start();
         Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
         Destination dest = new StompJmsDestination(destination);
-
-        MessageConsumer consumer = session.createConsumer(dest);
-        long start = System.currentTimeMillis();
-        long count = 1;
-        System.out.println("Waiting for messages...");
-        while(true) {
-            Message msg = consumer.receive();
-            if( msg instanceof  TextMessage ) {
-                String body = ((TextMessage) msg).getText();
-                if( "SHUTDOWN".equals(body)) {
-                    long diff = System.currentTimeMillis() - start;
-                    System.out.println(String.format("Received %d in %.2f seconds", count, (1.0*diff/1000.0)));
-                    break;
-                } else {
-                    if( count != msg.getIntProperty("id") ) {
-                        System.out.println("mismatch: "+count+"!="+msg.getIntProperty("id"));
-                    }
-                    count = msg.getIntProperty("id");
-
-                    if( count == 0 ) {
-                        start = System.currentTimeMillis();
-                    }
-                    if( count % 1000 == 0 ) {
-                        System.out.println(String.format("Received %d messages.", count));
-                    }
-                    count ++;
-                }
-
-            } else {
-                System.out.println("Unexpected message type: "+msg.getClass());
+        MessageProducer producer = session.createProducer(dest);
+        producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
+        
+        System.out.println("El envio de mensajes a iniciado!, digita el mensaje y pulsa enter");
+        while(true){
+        	String body="";
+            BufferedReader in = new BufferedReader(new InputStreamReader(System.in)); 
+            try{
+                body=in.readLine();
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }
+            
+            TextMessage msg = session.createTextMessage(body);
+            producer.send(msg);
+            if (body.equals("SHUTDOWN")){
+            	connection.close();
+            	break;
             }
         }
-        connection.close();
+        
+        
+        
+
     }
 
     private static String env(String key, String defaultValue) {
@@ -84,4 +83,5 @@ class Listener {
         else
             return defaultValue;
     }
+
 }
