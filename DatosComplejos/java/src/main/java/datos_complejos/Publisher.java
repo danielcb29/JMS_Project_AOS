@@ -47,14 +47,19 @@ class Publisher {
         MessageProducer producer = session.createProducer(dest);
         producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
         
-        System.out.println("El envio de mensajes a iniciado!, digita el mensaje y pulsa enter");
-    	Hora h = new Hora(12,45);
-        ObjectMessage message = session.createObjectMessage(h);
+        System.out.println("Se va a realizar el envio de dos objetos a listener");
+    	Estudiante cris = new Estudiante("Cristina","Extremera","76263127A",21);
+    	Estudiante daniel = new Estudiante("Daniel","Correa","Y4311434Y",21);
+        ObjectMessage message_cris = session.createObjectMessage(cris);
+        ObjectMessage message_daniel = session.createObjectMessage(daniel);
+        producer.send(message_cris);
+        producer.send(message_daniel);
+        TextMessage msg = session.createTextMessage("SHUTDOWN");
 
-        producer.send(message);
+        //Envio del mensaje
+        producer.send(msg);
+  
         connection.close();
-        
-        
 
     }
 
