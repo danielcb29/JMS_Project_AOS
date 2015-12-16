@@ -1,53 +1,54 @@
-#!/usr/bin/env ruby
-# ------------------------------------------------------------------------
-# Licensed to the Apache Software Foundation (ASF) under one or more
-# contributor license agreements.  See the NOTICE file distributed with
-# this work for additional information regarding copyright ownership.
-# The ASF licenses this file to You under the Apache License, Version 2.0
-# (the "License"); you may not use this file except in compliance with
-# the License.  You may obtain a copy of the License at
-# 
-# http://www.apache.org/licenses/LICENSE-2.0
-# 
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
-# ------------------------------------------------------------------------
+#Envio de mensajes ruby
+#Daniel Correa, Cristina Extremera
+#Lado listener, encargado de la escucha de mensajes
  
 require 'rubygems'
 require 'stomp'
 
+#Variables de configuracion para la comunicacion
 user = ENV["APOLLO_USER"] || "admin"
 password = ENV["APOLLO_PASSWORD"] || "password"
 host = ENV["APOLLO_HOST"] || "localhost"
 port = ENV["APOLLO_PORT"] || 61613
 destination = $*[0] || "/topic/event"
 
+#Conexion bajo STOMP
 conn = Stomp::Connection.open user, password, host, port, false 
+#Contador de mensajes
 count = 0
 
+#Suscripcion para escucha de mensajes
 conn.subscribe destination, { :ack =>"auto" }
+
+#Conteo de tiempo
 start = Time.now
+
+#Informe de que estas listo para recibir mensajes
 puts "Estas listo para recibir mensajes!"
+
+#Ciclo que permite recibir mensajes constantemente
 while true 
+	#Mensaje recibido
 	msg = conn.receive
+
 	if msg.command == "MESSAGE" 
 		if msg.body == "SHUTDOWN"
+			#Si el mensaje es shutdown se termina la conexion
 			diff = Time.now - start
 			puts "El envio de mensajes ha finalizado!"
 			puts "Recibidos #{count} mensajes en #{diff} segundos"
 			exit 0
 	
 		else
+			#Caso contrario se cuenta el mensaje y se muestra
 		  	start = Time.now if count==0 
 			count += 1;
 			puts "Has recibido: " + msg.body
 		end
 	else
+		#Si lo que recibimos no es un mensaje informamos que es
  		puts "#{msg.command}: #{msg.body}"
 	end
 end
-
+#Cierre de la conexion
 conn.disconnect
