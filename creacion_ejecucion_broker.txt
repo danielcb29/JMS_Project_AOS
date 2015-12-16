@@ -1,0 +1,24 @@
+#Instrucciones para creación y ejecución del broker
+
+Una vez descomprimido se ingresa dentro de bin y se ejecuta
+
+Para Linux y OSX: 
+
+	./apollo create /direccion_donde_queremos_que_quede/jms_broker
+
+Para windows
+
+	apollo create /direccion_donde_queremos_que_quede/jms_broker
+
+
+
+Para ejecutar el broker ingresamos en el directorio creado arriba, ingresamos al bin y ejecutamos 
+
+Para Linux y OSX: 
+
+	./apollo-broker run
+
+Para windows
+
+	apollo-broker run
+
