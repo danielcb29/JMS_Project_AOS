@@ -42,41 +42,15 @@ class Listener {
         long count = 0;
         System.out.println("Estas listo para recibir mensajes!");
         while(true) {
-            /*Message msg = consumer.receive();
-            if( msg instanceof  TextMessage ) {
-                String body = ((TextMessage) msg).getText();
-                if( "SHUTDOWN".equals(body)) {
-                    long diff = System.currentTimeMillis() - start;
-                    System.out.println(String.format("Recibidos %d mensajes en %.2f segundos", count, (1.0*diff/1000.0)));
-                    break;
-                } else {
-                    count++;
-                    if( count == 0 ) {
-                        start = System.currentTimeMillis();
-                    }
-                    System.out.println("Has recibido: "+body);
-                }
-
-            } else {
-                System.out.println("Unexpected message type: "+msg.getClass());
-            }*/
             Message msg = consumer.receive();
             if( msg instanceof  ObjectMessage ) {
-                Hora body = (Hora)((ObjectMessage) msg).getObject();
-                System.out.println(body.getMinutos());
-                System.out.println(body.getSegundos());
-                break;
-                /*if( "SHUTDOWN".equals(body)) {
-                    long diff = System.currentTimeMillis() - start;
-                    System.out.println(String.format("Recibidos %d mensajes en %.2f segundos", count, (1.0*diff/1000.0)));
-                    break;
-                } else {
-                    count++;
-                    if( count == 0 ) {
-                        start = System.currentTimeMillis();
-                    }
-                    System.out.println("Has recibido: "+body);
-                }*/
+            	if(((ObjectMessage) msg).getObject() instanceof Hora){
+            		Hora body = (Hora)((ObjectMessage) msg).getObject();
+            		System.out.println(body.getMinutos());
+            		System.out.println(body.getSegundos());
+            		break;
+            	}
+
 
             } else {
                 System.out.println("Unexpected message type: "+msg.getClass());

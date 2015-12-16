@@ -1,27 +1,21 @@
-Prereqs
+Prerequisitos
 =======
 
-- Install RubyGems see: http://docs.rubygems.org/
-- Install the stomp gem.  Run: gem install stomp
+- Instalar la gem stomp.  Ejecuta: gem install stomp
 
-Overview of stompcat.rb and catstomp.rb 
+Overview of listener.rb and publisher.rb 
 ==========================================
 
-The basic idea behind these scripts to to create something like netcat except over JMS
-destinations.
+La idea es un envío de mensajes entre dos clientes Ruby, para ello ejecutas primero
 
-catstomp.rb - takes stdin and sends it to a stomp destination
-stompcat.rb - outputs data received from a stomp destination
+	ruby listener.rb 
 
-A simple example usage:
+Donde tendras el cliente que recibe los mensajes, luego ejecutas
 
-In console 1 run:
-cat | ./catstomp.rb
+	ruby publisher.rb
 
-In console 2 run:
-./stompcat.rb
+Donde podras escribir mensajes por consola que seran recibidos por listener
 
-now any line you enter into console 1 will get sent to console 2.
+Para finalizar el envío de mensajes deben digitar 
 
-Hopefully these to scripts can get merged together in the future and the command line
-arguments can change so that it look more like netcat.
+	SHUTDWON

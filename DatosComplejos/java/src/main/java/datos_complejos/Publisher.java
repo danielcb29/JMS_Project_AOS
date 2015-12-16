@@ -48,29 +48,11 @@ class Publisher {
         producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
         
         System.out.println("El envio de mensajes a iniciado!, digita el mensaje y pulsa enter");
-        //while(true){
-        	/*String body="";
-            BufferedReader in = new BufferedReader(new InputStreamReader(System.in)); 
-            try{
-                body=in.readLine();
-            } catch (IOException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }*/
-            
-            //TextMessage msg = session.createTextMessage(body);
-        	Hora h = new Hora(12,45);
-            ObjectMessage message = session.createObjectMessage(h);
+    	Hora h = new Hora(12,45);
+        ObjectMessage message = session.createObjectMessage(h);
 
-            //producer.send(msg);
-            producer.send(message);
-
-            //if (body.equals("SHUTDOWN")){
-            	connection.close();
-            	//break;
-            //}
-        //}
-        
+        producer.send(message);
+        connection.close();
         
         
 
