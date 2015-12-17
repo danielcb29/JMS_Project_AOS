@@ -57,6 +57,7 @@ class Listener {
             		Estudiante body = (Estudiante)((ObjectMessage) msg).getObject();
             		//se imprime la version texto del objeto
             		System.out.println(body.toString());
+                    count++;
             	}
 
 

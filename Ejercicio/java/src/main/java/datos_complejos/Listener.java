@@ -62,6 +62,7 @@ class Listener {
             		
             		//se imprime la version texto del objeto
             		System.out.println(body.toString());
+            		count++;
             	}
 
 
