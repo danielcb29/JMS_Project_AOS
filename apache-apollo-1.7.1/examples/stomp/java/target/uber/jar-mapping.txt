@@ -1,0 +1,6 @@
+stomp-example-0.1-SNAPSHOT.jar=/Users/daniel/Downloads/apache-apollo-1.7.1/examples/stomp/java/target/stomp-example-0.1-SNAPSHOT.jar
+geronimo-jms_1.1_spec-1.1.jar=/Users/daniel/.m2/repository/org/apache/geronimo/specs/geronimo-jms_1.1_spec/1.1/geronimo-jms_1.1_spec-1.1.jar
+stompjms-client-1.18.jar=/Users/daniel/.m2/repository/org/fusesource/stompjms/stompjms-client/1.18/stompjms-client-1.18.jar
+hawtdispatch-transport-1.18.jar=/Users/daniel/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch-transport/1.18/hawtdispatch-transport-1.18.jar
+hawtdispatch-1.18.jar=/Users/daniel/.m2/repository/org/fusesource/hawtdispatch/hawtdispatch/1.18/hawtdispatch-1.18.jar
+hawtbuf-1.9.jar=/Users/daniel/.m2/repository/org/fusesource/hawtbuf/hawtbuf/1.9/hawtbuf-1.9.jar

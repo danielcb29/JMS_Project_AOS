@@ -1,0 +1,19 @@
+2016-01-19 15:17:28,334 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50224, reason:Failed login: User id not provided 
+2016-01-19 15:17:28,726 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50224, reason:Failed login: User id not provided 
+2016-01-19 15:19:09,381 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50224, reason:Failed login: Invalid user id or password for user: admin 
+2016-01-19 16:09:05,769 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50701, reason:Failed login: User id not provided 
+2016-01-19 16:09:11,975 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50705, reason:Failed login: User id not provided 
+2016-01-19 16:09:12,350 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50706, reason:Failed login: User id not provided 
+2016-01-19 16:09:12,375 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50707, reason:Failed login: User id not provided 
+2016-01-19 16:09:12,393 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50705, reason:Failed login: User id not provided 
+2016-01-19 16:09:12,424 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50706, reason:Failed login: User id not provided 
+2016-01-19 16:09:12,434 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50705, reason:Failed login: User id not provided 
+2016-01-19 16:09:12,440 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50707, reason:Failed login: User id not provided 
+2016-01-19 16:09:12,448 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50706, reason:Failed login: User id not provided 
+2016-01-19 16:09:12,454 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50707, reason:Failed login: User id not provided 
+2016-01-19 16:09:12,466 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50706, reason:Failed login: User id not provided 
+2016-01-19 16:09:12,476 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:50706, reason:Failed login: User id not provided 
+2016-01-21 16:57:28,689 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:53064, reason:Failed login: User id not provided 
+2016-01-21 16:57:28,840 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:53064, reason:Failed login: User id not provided 
+2016-01-21 17:53:19,795 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:53480, reason:Failed login: User id not provided 
+2016-01-21 17:53:20,058 authentication failed: local:/127.0.0.1:61680, remote:/127.0.0.1:53480, reason:Failed login: User id not provided 

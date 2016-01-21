@@ -1,0 +1,129 @@
+2016-01-19 13:04:02,441 | INFO  | OS     : Mac OS X 10.11.1 | 
+2016-01-19 13:04:02,454 | INFO  | JVM    : Java HotSpot(TM) 64-Bit Server VM 1.6.0_65 (Apple Inc.) | 
+2016-01-19 13:04:02,455 | INFO  | Apollo : 1.7.1 (at: /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/apache-apollo-1.7.1) | 
+2016-01-19 13:04:02,456 | INFO  | OS is restricting the open file limit to: 6250 | 
+2016-01-19 13:04:02,459 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2016-01-19 13:04:03,222 | INFO  | Starting store: leveldb store at /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/jms_broker/data | 
+2016-01-19 13:04:04,333 | INFO  | virtual host startup is waiting on store startup | 
+2016-01-19 13:04:04,954 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2016-01-19 13:04:04,955 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2016-01-19 13:04:05,511 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2016-01-19 13:04:05,540 | INFO  | Opening the log file took: 555.11 ms | 
+2016-01-19 13:04:05,895 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2016-01-19 13:04:06,289 | INFO  | virtual host startup is no longer waiting.  It waited a total of 3 seconds. | 
+2016-01-19 13:04:08,091 | INFO  | broker startup is waiting on start jetty webserver | 
+2016-01-19 13:04:09,289 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2016-01-19 13:04:09,312 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2016-01-19 13:04:09,313 | INFO  | broker startup is no longer waiting.  It waited a total of 6 seconds. | 
+2016-01-19 15:09:15,267 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2016-01-19 15:09:15,267 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2016-01-19 15:09:15,267 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2016-01-19 15:09:15,342 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2016-01-19 15:09:16,084 | INFO  | stopping broker is waiting on stop broker: default | 
+2016-01-19 15:09:16,269 | INFO  | virtual host shutdown is waiting on store session counter | 
+2016-01-19 15:09:20,154 | INFO  | broker shutdown is waiting on stop virtual-host: jms_broker | 
+2016-01-19 15:09:20,290 | INFO  | virtual host shutdown is now waiting on stop leveldb store at /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/jms_broker/data | 
+2016-01-19 15:09:24,162 | INFO  | virtual host shutdown is no longer waiting.  It waited a total of 8 seconds. | 
+2016-01-19 15:09:24,231 | INFO  | broker shutdown is no longer waiting.  It waited a total of 9 seconds. | 
+2016-01-19 15:09:24,231 | INFO  | stopping broker is no longer waiting.  It waited a total of 9 seconds. | 
+2016-01-19 15:16:55,797 | INFO  | OS     : Mac OS X 10.11.1 | 
+2016-01-19 15:16:55,846 | INFO  | JVM    : Java HotSpot(TM) 64-Bit Server VM 1.6.0_65 (Apple Inc.) | 
+2016-01-19 15:16:55,847 | INFO  | Apollo : 1.7.1 (at: /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/apache-apollo-1.7.1) | 
+2016-01-19 15:16:55,848 | INFO  | OS is restricting the open file limit to: 6250 | 
+2016-01-19 15:16:55,850 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2016-01-19 15:16:57,300 | INFO  | Starting store: leveldb store at /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/jms_broker/data | 
+2016-01-19 15:16:58,656 | INFO  | virtual host startup is waiting on store startup | 
+2016-01-19 15:17:02,013 | INFO  | broker startup is waiting on start connector: tls, start connector: wss, start virtual-host: jms_broker, start connector: tcp, start connector: ws, start jetty webserver | 
+2016-01-19 15:17:03,758 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2016-01-19 15:17:03,834 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2016-01-19 15:17:04,312 | INFO  | Opening the log file took: 1861.32 ms | 
+2016-01-19 15:17:05,457 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2016-01-19 15:17:06,323 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2016-01-19 15:17:07,112 | INFO  | broker startup is now waiting on start virtual-host: jms_broker, start jetty webserver | 
+2016-01-19 15:17:11,280 | INFO  | virtual host startup is no longer waiting.  It waited a total of 13 seconds. | 
+2016-01-19 15:17:12,113 | INFO  | broker startup is now waiting on start jetty webserver | 
+2016-01-19 15:17:13,425 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2016-01-19 15:17:13,426 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2016-01-19 15:17:13,426 | INFO  | broker startup is no longer waiting.  It waited a total of 16 seconds. | 
+2016-01-19 16:10:02,153 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2016-01-19 16:10:02,180 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2016-01-19 16:10:02,180 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2016-01-19 16:10:02,201 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2016-01-19 16:10:02,996 | INFO  | stopping broker is waiting on stop broker: default | 
+2016-01-19 16:10:03,214 | INFO  | virtual host shutdown is waiting on store session counter | 
+2016-01-19 16:10:04,215 | INFO  | virtual host shutdown is now waiting on stop leveldb store at /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/jms_broker/data | 
+2016-01-19 16:10:04,453 | INFO  | virtual host shutdown is no longer waiting.  It waited a total of 2 seconds. | 
+2016-01-19 16:10:04,453 | INFO  | stopping broker is no longer waiting.  It waited a total of 2 seconds. | 
+2016-01-19 17:39:07,142 | INFO  | OS     : Mac OS X 10.11.1 | 
+2016-01-19 17:39:07,192 | INFO  | JVM    : Java HotSpot(TM) 64-Bit Server VM 1.6.0_65 (Apple Inc.) | 
+2016-01-19 17:39:07,192 | INFO  | Apollo : 1.7.1 (at: /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/apache-apollo-1.7.1) | 
+2016-01-19 17:39:07,193 | INFO  | OS is restricting the open file limit to: 6250 | 
+2016-01-19 17:39:07,196 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2016-01-19 17:39:07,924 | INFO  | Starting store: leveldb store at /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/jms_broker/data | 
+2016-01-19 17:39:09,067 | INFO  | virtual host startup is waiting on store startup | 
+2016-01-19 17:39:10,462 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2016-01-19 17:39:10,464 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2016-01-19 17:39:10,498 | INFO  | Opening the log file took: 716.87 ms | 
+2016-01-19 17:39:10,893 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2016-01-19 17:39:11,314 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2016-01-19 17:39:12,711 | INFO  | virtual host startup is no longer waiting.  It waited a total of 4 seconds. | 
+2016-01-19 17:39:12,901 | INFO  | broker startup is waiting on start jetty webserver, start virtual-host: jms_broker | 
+2016-01-19 17:39:14,348 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2016-01-19 17:39:14,349 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2016-01-19 17:39:14,349 | INFO  | broker startup is no longer waiting.  It waited a total of 6 seconds. | 
+2016-01-19 22:19:24,931 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2016-01-19 22:19:25,119 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2016-01-19 22:19:25,296 | INFO  | stopping broker is waiting on stop broker: default | 
+2016-01-19 22:19:30,038 | INFO  | broker shutdown is waiting on stop jetty webserver, stop connector: ws, stop connector: wss, stop virtual-host: jms_broker | 
+2016-01-19 22:19:30,038 | INFO  | virtual host shutdown is waiting on store session counter | 
+2016-01-19 22:19:31,170 | INFO  | virtual host shutdown is now waiting on stop leveldb store at /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/jms_broker/data | 
+2016-01-19 22:19:32,078 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2016-01-19 22:19:32,078 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2016-01-19 22:19:35,039 | INFO  | broker shutdown is now waiting on stop virtual-host: jms_broker | 
+2016-01-19 22:19:45,127 | INFO  | virtual host shutdown is no longer waiting.  It waited a total of 20 seconds. | 
+2016-01-19 22:19:45,265 | INFO  | broker shutdown is no longer waiting.  It waited a total of 20 seconds. | 
+2016-01-19 22:19:45,266 | INFO  | stopping broker is no longer waiting.  It waited a total of 20 seconds. | 
+2016-01-21 16:49:49,101 | INFO  | OS     : Mac OS X 10.11.1 | 
+2016-01-21 16:49:49,128 | INFO  | JVM    : Java HotSpot(TM) 64-Bit Server VM 1.6.0_65 (Apple Inc.) | 
+2016-01-21 16:49:49,128 | INFO  | Apollo : 1.7.1 (at: /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/apache-apollo-1.7.1) | 
+2016-01-21 16:49:49,129 | INFO  | OS is restricting the open file limit to: 6250 | 
+2016-01-21 16:49:49,132 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2016-01-21 16:49:49,860 | INFO  | Starting store: leveldb store at /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/jms_broker/data | 
+2016-01-21 16:49:51,078 | INFO  | virtual host startup is waiting on store startup | 
+2016-01-21 16:49:51,773 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2016-01-21 16:49:51,774 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2016-01-21 16:49:52,089 | INFO  | Opening the log file took: 644.50 ms | 
+2016-01-21 16:49:52,359 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2016-01-21 16:49:52,999 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2016-01-21 16:49:54,537 | INFO  | virtual host startup is no longer waiting.  It waited a total of 4 seconds. | 
+2016-01-21 16:49:54,825 | INFO  | broker startup is waiting on start jetty webserver | 
+2016-01-21 16:49:55,967 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2016-01-21 16:49:55,995 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2016-01-21 16:49:55,995 | INFO  | broker startup is no longer waiting.  It waited a total of 6 seconds. | 
+2016-01-21 17:53:05,049 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2016-01-21 17:53:05,063 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2016-01-21 17:53:05,061 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2016-01-21 17:53:05,069 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2016-01-21 17:53:13,143 | INFO  | OS     : Mac OS X 10.11.1 | 
+2016-01-21 17:53:13,145 | INFO  | JVM    : Java HotSpot(TM) 64-Bit Server VM 1.6.0_65 (Apple Inc.) | 
+2016-01-21 17:53:13,145 | INFO  | Apollo : 1.7.1 (at: /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/apache-apollo-1.7.1) | 
+2016-01-21 17:53:13,146 | INFO  | OS is restricting the open file limit to: 6250 | 
+2016-01-21 17:53:13,148 | WARN  | Please increase the process file limit using 'ulimit -n 8500' or configure lower connection limits on the broker connectors. | 
+2016-01-21 17:53:13,382 | INFO  | Starting store: leveldb store at /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/jms_broker/data | 
+2016-01-21 17:53:13,567 | INFO  | Accepting connections at: tcp://0.0.0.0:61613 | 
+2016-01-21 17:53:13,568 | INFO  | Accepting connections at: tls://0.0.0.0:61614 | 
+2016-01-21 17:53:13,738 | INFO  | Accepting connections at: ws://0.0.0.0:61623/ | 
+2016-01-21 17:53:13,985 | INFO  | Accepting connections at: wss://0.0.0.0:61624/ | 
+2016-01-21 17:53:14,027 | INFO  | Opening the log file took: 249.08 ms | 
+2016-01-21 17:53:14,391 | INFO  | virtual host startup is waiting on store startup | 
+2016-01-21 17:53:14,537 | INFO  | virtual host startup is no longer waiting.  It waited a total of 1 seconds. | 
+2016-01-21 17:53:15,454 | INFO  | Administration interface available at: https://127.0.0.1:61681/ | 
+2016-01-21 17:53:15,454 | INFO  | Administration interface available at: http://127.0.0.1:61680/ | 
+2016-01-21 17:54:50,951 | INFO  | Stopped connector at: tcp://0.0.0.0:61613 | 
+2016-01-21 17:54:50,952 | INFO  | Stopped connector at: tls://0.0.0.0:61614 | 
+2016-01-21 17:54:50,964 | INFO  | Stopped connector at: wss://0.0.0.0:61624 | 
+2016-01-21 17:54:50,966 | INFO  | Stopped connector at: ws://0.0.0.0:61623 | 
+2016-01-21 17:54:51,949 | INFO  | stopping broker is waiting on stop broker: default | 
+2016-01-21 17:54:51,954 | INFO  | virtual host shutdown is waiting on stop leveldb store at /Users/daniel/Documents/UnEx/Proyecto_SOA/JMS_Project_AOS/jms_broker/data | 
+2016-01-21 17:54:55,345 | INFO  | virtual host shutdown is no longer waiting.  It waited a total of 4 seconds. | 
+2016-01-21 17:54:55,345 | INFO  | stopping broker is no longer waiting.  It waited a total of 4 seconds. | 
