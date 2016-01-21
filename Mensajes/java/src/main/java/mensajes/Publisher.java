@@ -44,7 +44,7 @@ class Publisher {
         producer.setDeliveryMode(DeliveryMode.NON_PERSISTENT);
         
         //Se informa de que el envio de mensajes esta listo
-        System.out.println("El envio de mensajes a iniciado!, digita el mensaje y pulsa enter");
+        System.out.println("El envio de mensajes ha iniciado!, digita el mensaje y pulsa enter");
 
         //Ciclo de envio de mensajes
         while(true){
