@@ -16,7 +16,7 @@ destination = $*[0] || "/topic/event"
 conn = Stomp::Connection.open user, password, host, port, false 
 
 #Informe de que ya se pueden enviar mensajes en consola
-puts "El envio de mensajes a iniciado!, digita el mensaje y pulsa enter"
+puts "El envio de mensajes ha iniciado!, digita el mensaje y pulsa enter"
 
 #Ciclo que permite hacer el envio constante de mensajes
 while true
